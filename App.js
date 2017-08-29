@@ -57,7 +57,7 @@ app.post('/CREATEUSER',function(req,res){
         else{
             console.log('Error',err);
             res.send(err);
-        }
+        } 
     })
 })
 
