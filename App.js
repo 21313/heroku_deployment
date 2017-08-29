@@ -110,6 +110,6 @@ mongoose.connection.on('disconnected',function(disconnect){
     console.log('Mongoose default connection is disconnected '+ disconnect);
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log('Server run on Port 3000')
 })
