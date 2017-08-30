@@ -40,11 +40,11 @@ var userModel = mongoose.model('User', userSchema);
 
 
 //==========Create USer Signup API Start=====================//
-// app.use('Access-Control-Allow-Origin','*');
+app.use('Access-Control-Allow-Origin','*');
 app.post('/CREATEUSER',function(req,res){
     console.log('api work')
-    // res.header('Access-Control-Allow-Origin',"*");
-    //response.setHeader('Access-Control-Allow-Origin',"*")
+    res.header('Access-Control-Allow-Origin',"*");
+    response.setHeader('Access-Control-Allow-Origin',"*");
     var userObj = {
         patientName : req.body.patientName,
         patientDisease : req.body.patientDisease,
