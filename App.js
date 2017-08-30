@@ -1,11 +1,11 @@
 var mongoose = require('mongoose');
 var express = require('express');
 var bodyParser = require('body-parser');
-var cors = require('cors');
+// var cors = require('cors');
 
-//set origin that can allow the client to hit the server
-cors({credentials : true, origin : true});
-app.use(cors());
+// //set origin that can allow the client to hit the server
+// cors({credentials : true, origin : true});
+// app.use(cors());
 
 //Setup express instant on app Variable
 var app = express();
