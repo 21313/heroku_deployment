@@ -1,11 +1,6 @@
 var mongoose = require('mongoose');
 var express = require('express');
 var bodyParser = require('body-parser');
-// var cors = require('cors');
-
-// //set origin that can allow the client to hit the server
-// cors({credentials : true, origin : true});
-// app.use(cors());
 
 //Setup express instant on app Variable
 var app = express();
@@ -40,10 +35,10 @@ var userModel = mongoose.model('User', userSchema);
 
 
 //==========Create USer Signup API Start=====================//
-app.use('Access-Control-Allow-Origin','*');
+// app.use('Access-Control-Allow-Origin','*');
 app.post('/CREATEUSER',function(req,res){
     console.log('api work')
-    res.header('Access-Control-Allow-Origin',"*");
+    // res.header('Access-Control-Allow-Origin',"*");
     //response.setHeader('Access-Control-Allow-Origin',"*")
     var userObj = {
         patientName : req.body.patientName,
